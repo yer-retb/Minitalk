@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   server.c                                           :+:      :+:    :+:   */
+/*   server_bonus.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yer-retb <yer-retb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 05:59:39 by yer-retb          #+#    #+#             */
-/*   Updated: 2022/04/23 07:31:06 by yer-retb         ###   ########.fr       */
+/*   Updated: 2022/04/23 07:30:58 by yer-retb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,7 @@ int	main(void)
 {
 	g_data.tab = malloc(sizeof(int));
 	g_data.i = 0;
-	ft_printf("The PId Is %d \n", getpid());
+	ft_printf("The PId 'Bonus' Is %d \n", getpid());
 	signal(SIGUSR1, &crepting);
 	signal(SIGUSR2, &crepting);
 	while (1)
